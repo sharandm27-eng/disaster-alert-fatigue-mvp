@@ -1,3 +1,4 @@
+> ⚠️ This repository contains the **final frozen MVP** for hackathon submission.
 # Disaster Alert System with Alert Fatigue Control (MVP)
 
 ## Problem Statement
