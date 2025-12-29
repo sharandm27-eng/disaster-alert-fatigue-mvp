@@ -22,7 +22,13 @@ def make_decision(risk_score, fatigue):
         return "SUPPRESS"
 
 def explain(decision, risk_score, fatigue):
-    return f"Decision is {decision} because risk score is {risk_score} and alert fatigue is {fatigue}."
+    if decision == "SEND":
+        return "Alert sent because the disaster risk is high and user alert fatigue is manageable."
+    elif decision == "DELAY":
+        return "Alert delayed because some risk exists but user alert fatigue is currently high."
+    else:
+        return "Alert suppressed because the risk is low and sending alerts may increase alert fatigue."
+
 
 # ---- Main Program ----
 print("=== Disaster Alert System MVP ===")
