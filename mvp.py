@@ -37,7 +37,10 @@ decision = make_decision(risk_score, fatigue)
 
 explanation = explain(decision, risk_score, fatigue)
 
-print("\n--- Alert Decision ---")
-print("Decision:", decision)
-print("Explanation:", explanation)
+print("\n==============================")
+print("ALERT DECISION RESULT")
+print("==============================")
+print("Decision    :", decision)
+print("Explanation :", explanation)
+
 input("\nPress Enter to exit...")
